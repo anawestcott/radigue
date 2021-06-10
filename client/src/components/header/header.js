@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import GetPosition from "./locater/get-position";
-import About from "./about";
-import Save from "./save";
-import Load from "./load";
-import Login from "./login";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import GetPosition from './locater/get-position';
+import About from './about';
+import Save from './save';
+import Load from './load';
+import Login from './login';
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
@@ -24,6 +24,8 @@ const Header = () => {
     </Wrapper>
   );
 };
+
+const Test = styled.p``;
 
 const Wrapper = styled.div`
   width: 100%;
