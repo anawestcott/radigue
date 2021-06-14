@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import styled from "styled-components";
-import * as Tone from "tone";
-import { stopStart, dronePitch } from "../../actions";
-import { useSelector, useDispatch } from "react-redux";
+import React, { useState, useEffect } from 'react';
+import styled from 'styled-components';
+import * as Tone from 'tone';
+import { stopStart, dronePitch } from '../../actions';
+import { useSelector, useDispatch } from 'react-redux';
 
 const DroneSix = () => {
   const dispatch = useDispatch();
@@ -35,14 +35,14 @@ const DroneSix = () => {
       dispatch(
         stopStart({
           startStop: true,
-          instrumentTitle: "droneSix",
+          instrumentTitle: 'droneSix',
         })
       );
     } else {
       dispatch(
         stopStart({
           startStop: false,
-          instrumentTitle: "droneSix",
+          instrumentTitle: 'droneSix',
         })
       );
     }
@@ -52,7 +52,7 @@ const DroneSix = () => {
     dispatch(
       dronePitch({
         pitch: event.target.value,
-        instrumentTitle: "droneSix",
+        instrumentTitle: 'droneSix',
       })
     );
   };
@@ -73,6 +73,8 @@ const DroneSix = () => {
     </>
   );
 };
+
+// gpg test
 
 const Wrapper = styled.div`
   display: flex;
